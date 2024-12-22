@@ -1,0 +1,14 @@
+C:\Users\Magad\source\repos\DZ5_dop3\DZ5_dop3\bin\Debug\net8.0\DZ5_dop3.exe
+C:\Users\Magad\source\repos\DZ5_dop3\DZ5_dop3\bin\Debug\net8.0\DZ5_dop3.deps.json
+C:\Users\Magad\source\repos\DZ5_dop3\DZ5_dop3\bin\Debug\net8.0\DZ5_dop3.runtimeconfig.json
+C:\Users\Magad\source\repos\DZ5_dop3\DZ5_dop3\bin\Debug\net8.0\DZ5_dop3.dll
+C:\Users\Magad\source\repos\DZ5_dop3\DZ5_dop3\bin\Debug\net8.0\DZ5_dop3.pdb
+C:\Users\Magad\source\repos\DZ5_dop3\DZ5_dop3\obj\Debug\net8.0\DZ5_dop3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Magad\source\repos\DZ5_dop3\DZ5_dop3\obj\Debug\net8.0\DZ5_dop3.AssemblyInfoInputs.cache
+C:\Users\Magad\source\repos\DZ5_dop3\DZ5_dop3\obj\Debug\net8.0\DZ5_dop3.AssemblyInfo.cs
+C:\Users\Magad\source\repos\DZ5_dop3\DZ5_dop3\obj\Debug\net8.0\DZ5_dop3.csproj.CoreCompileInputs.cache
+C:\Users\Magad\source\repos\DZ5_dop3\DZ5_dop3\obj\Debug\net8.0\DZ5_dop3.dll
+C:\Users\Magad\source\repos\DZ5_dop3\DZ5_dop3\obj\Debug\net8.0\refint\DZ5_dop3.dll
+C:\Users\Magad\source\repos\DZ5_dop3\DZ5_dop3\obj\Debug\net8.0\DZ5_dop3.pdb
+C:\Users\Magad\source\repos\DZ5_dop3\DZ5_dop3\obj\Debug\net8.0\DZ5_dop3.genruntimeconfig.cache
+C:\Users\Magad\source\repos\DZ5_dop3\DZ5_dop3\obj\Debug\net8.0\ref\DZ5_dop3.dll

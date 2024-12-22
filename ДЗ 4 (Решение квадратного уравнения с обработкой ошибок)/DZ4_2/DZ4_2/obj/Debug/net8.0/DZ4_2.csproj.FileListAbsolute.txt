@@ -1,0 +1,14 @@
+C:\Users\Magad\source\repos\DZ4_2\DZ4_2\bin\Debug\net8.0\DZ4_2.exe
+C:\Users\Magad\source\repos\DZ4_2\DZ4_2\bin\Debug\net8.0\DZ4_2.deps.json
+C:\Users\Magad\source\repos\DZ4_2\DZ4_2\bin\Debug\net8.0\DZ4_2.runtimeconfig.json
+C:\Users\Magad\source\repos\DZ4_2\DZ4_2\bin\Debug\net8.0\DZ4_2.dll
+C:\Users\Magad\source\repos\DZ4_2\DZ4_2\bin\Debug\net8.0\DZ4_2.pdb
+C:\Users\Magad\source\repos\DZ4_2\DZ4_2\obj\Debug\net8.0\DZ4_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Magad\source\repos\DZ4_2\DZ4_2\obj\Debug\net8.0\DZ4_2.AssemblyInfoInputs.cache
+C:\Users\Magad\source\repos\DZ4_2\DZ4_2\obj\Debug\net8.0\DZ4_2.AssemblyInfo.cs
+C:\Users\Magad\source\repos\DZ4_2\DZ4_2\obj\Debug\net8.0\DZ4_2.csproj.CoreCompileInputs.cache
+C:\Users\Magad\source\repos\DZ4_2\DZ4_2\obj\Debug\net8.0\DZ4_2.dll
+C:\Users\Magad\source\repos\DZ4_2\DZ4_2\obj\Debug\net8.0\refint\DZ4_2.dll
+C:\Users\Magad\source\repos\DZ4_2\DZ4_2\obj\Debug\net8.0\DZ4_2.pdb
+C:\Users\Magad\source\repos\DZ4_2\DZ4_2\obj\Debug\net8.0\DZ4_2.genruntimeconfig.cache
+C:\Users\Magad\source\repos\DZ4_2\DZ4_2\obj\Debug\net8.0\ref\DZ4_2.dll
