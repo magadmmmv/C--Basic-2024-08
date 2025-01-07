@@ -12,6 +12,8 @@
  а для остальных названий - null. Убедиться, что в этой серии проверок ошибка появляется только для Лимонии.
 */
 
+using static DZ7_3.Program.PlanetCatalog;
+
 namespace DZ7_3
 {
     internal class Program
@@ -73,18 +75,23 @@ namespace DZ7_3
             // Программа 3.
             Console.WriteLine("Программа 3");
             var planets = new PlanetCatalog();
+            PlanetValidator lambda1 = 
+                y => planets.Count % 3 == 0 ? "Вы спрашиваете слишком часто" : null!;
 
-            Console.WriteLine("Земля: " + planets.GetPlanet("Земля", y => planets.Count % 3 == 0 ? "Вы спрашиваете слишком часто" : null!));
-            Console.WriteLine("Лимония: " + planets.GetPlanet("Лимония", y => planets.Count % 3 == 0 ? "Вы спрашиваете слишком часто" : null!));
-            Console.WriteLine("Марс: " + planets.GetPlanet("Марс", y => planets.Count % 3 == 0 ? "Вы спрашиваете слишком часто" : null!));
+            Console.WriteLine("Земля: " + planets.GetPlanet("Земля", lambda1));
+            Console.WriteLine("Лимония: " + planets.GetPlanet("Лимония", lambda1));
+            Console.WriteLine("Марс: " + planets.GetPlanet("Марс", lambda1));
 
             Console.WriteLine();
 
             // (*)
             Console.WriteLine("Доп. задание (*)");
-            Console.WriteLine("Земля: " + planets.GetPlanet("Земля", y => y == "Лимония" ? "Это запретная планета" : null!));
-            Console.WriteLine("Лимония: " + planets.GetPlanet("Лимония", y => y == "Лимония" ? "Это запретная планета" : null!));
-            Console.WriteLine("Марс: " + planets.GetPlanet("Марс", y => y == "Лимония" ? "Это запретная планета" : null!));
+            PlanetValidator lambda2 = 
+                y => y == "Лимония" ? "Это запретная планета" : null!;
+
+            Console.WriteLine("Земля: " + planets.GetPlanet("Земля", lambda2));
+            Console.WriteLine("Лимония: " + planets.GetPlanet("Лимония", lambda2));
+            Console.WriteLine("Марс: " + planets.GetPlanet("Марс", lambda2));
         }
     }
 }
