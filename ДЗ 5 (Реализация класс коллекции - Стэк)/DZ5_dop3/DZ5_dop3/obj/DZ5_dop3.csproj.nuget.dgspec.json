@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Magad\\source\\repos\\DZ5_dop3\\DZ5_dop3\\DZ5_dop3.csproj": {}
+    "D:\\Study\\C-Sharp-Basic-2024-08\\ДЗ 5 (Реализация класс коллекции - Стэк)\\DZ5_dop3\\DZ5_dop3\\DZ5_dop3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Magad\\source\\repos\\DZ5_dop3\\DZ5_dop3\\DZ5_dop3.csproj": {
+    "D:\\Study\\C-Sharp-Basic-2024-08\\ДЗ 5 (Реализация класс коллекции - Стэк)\\DZ5_dop3\\DZ5_dop3\\DZ5_dop3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Magad\\source\\repos\\DZ5_dop3\\DZ5_dop3\\DZ5_dop3.csproj",
+        "projectUniqueName": "D:\\Study\\C-Sharp-Basic-2024-08\\ДЗ 5 (Реализация класс коллекции - Стэк)\\DZ5_dop3\\DZ5_dop3\\DZ5_dop3.csproj",
         "projectName": "DZ5_dop3",
-        "projectPath": "C:\\Users\\Magad\\source\\repos\\DZ5_dop3\\DZ5_dop3\\DZ5_dop3.csproj",
+        "projectPath": "D:\\Study\\C-Sharp-Basic-2024-08\\ДЗ 5 (Реализация класс коллекции - Стэк)\\DZ5_dop3\\DZ5_dop3\\DZ5_dop3.csproj",
         "packagesPath": "C:\\Users\\Magad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Magad\\source\\repos\\DZ5_dop3\\DZ5_dop3\\obj\\",
+        "outputPath": "D:\\Study\\C-Sharp-Basic-2024-08\\ДЗ 5 (Реализация класс коллекции - Стэк)\\DZ5_dop3\\DZ5_dop3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

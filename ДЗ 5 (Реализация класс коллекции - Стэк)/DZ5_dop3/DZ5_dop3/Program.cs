@@ -2,80 +2,71 @@
 {
     public class Stack
     {
-        private StackItem[] _stackItems;
-        private StackItem[] _tempStackItems;
+        StackItem? Current;
         public int Size { get; set; }
-        private class StackItem
+        class StackItem
         {
-            public string? Value { get; set; }
+            public string Value { get; set; }
             public StackItem? Previous { get; set; }
+
+            public StackItem(string value, StackItem? previous)
+            {
+                Value = value;
+                Previous = previous;
+            }
         }
 
         public Stack(params string[] args)
         {
-            _stackItems = new StackItem[args.Length];
             Size = 0;
 
-            for (int i = 0; i < _stackItems.Length; i++)
+            for (int i = 0; i < args.Length; i++)
             {
-                var stackItem = new StackItem { Value = args[i] };
-                _stackItems[i] = stackItem;
-
-                if (i == 0)
-                    _stackItems[i].Previous = null;
-                else 
+                if (Size == 0)
                 {
-                    var stackItemPrevious = new StackItem { Value = args[i - 1] };
-                    _stackItems[i].Previous = stackItemPrevious;
+                    Current = new StackItem(args[i], null);
+                    Current.Previous = null;
                 }
+                else
+                {
+                    var stackItem = new StackItem(args[i], Current);
+                    Current = stackItem;
+                }
+
                 Size++;
             }
         }
 
         public void Add(string arg)
         {
+            var stackItem = new StackItem(arg, Current);
+            Current = stackItem;
             Size++;
-            _tempStackItems = new StackItem[Size];
-            Array.Copy(_stackItems, _tempStackItems, Size - 1);
-
-            var stackItem = new StackItem { Value = arg };
-            _tempStackItems[Size - 1] = stackItem;
-            if (Size - 1 == 0)
-                _tempStackItems[Size - 1].Previous = null;
-            else
-                _tempStackItems[Size - 1].Previous = _tempStackItems[Size - 2];
-
-            _stackItems = new StackItem[Size];
-            Array.Copy(_tempStackItems, _stackItems, Size);
         }
 
-        public string? Pop()
+        public string Pop()
         {
             try
             {
-                var delElem = _stackItems[Size - 1].Value;
+                if (Current == null)
+                    throw new NullReferenceException("Стек пустой");
+                var delElem = Current.Value;
+                Current = Current.Previous;
                 Size--;
-
-                _tempStackItems = new StackItem[Size];
-                Array.Copy(_stackItems, _tempStackItems, Size);
-
-                _stackItems = new StackItem[Size];
-                Array.Copy(_tempStackItems, _stackItems, Size);
-
                 return delElem;
             }
-            catch (Exception)
+            catch (NullReferenceException)
             {
-                Console.WriteLine("Стек пустой");
+                return "null";
             }
-            return null;
         }
 
         public string? Top
         {
             get
             {
-                if (Size > 0) return _stackItems[Size - 1].Value;
+                if (Size > 0) 
+                    return Current!.Value;
                 return null;
             }
         }
