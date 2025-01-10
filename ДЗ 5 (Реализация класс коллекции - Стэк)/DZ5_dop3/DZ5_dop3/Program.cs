@@ -3,7 +3,7 @@
     public class Stack
     {
         StackItem? Current;
-        public int Size { get; set; }
+        public int Size { get; private set; }
         class StackItem
         {
             public string Value { get; set; }
@@ -46,19 +46,12 @@
 
         public string Pop()
         {
-            try
-            {
-                if (Current == null)
-                    throw new NullReferenceException("Стек пустой");
-                var delElem = Current.Value;
-                Current = Current.Previous;
-                Size--;
-                return delElem;
-            }
-            catch (NullReferenceException)
-            {
-                return "null";
-            }
+            if (Current == null)
+                throw new NullReferenceException("Стек пустой");
+            var delElem = Current.Value;
+            Current = Current.Previous;
+            Size--;
+            return delElem;
         }
 
         public string? Top
@@ -116,7 +109,15 @@
             s.Pop();
             // size = 0, Top = null
             Console.WriteLine($"size = {s.Size}, Top = {(s.Top == null ? "null" : s.Top)}");
-            s.Pop();
+            try
+            {
+                s.Pop();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            
 
             // Доп задание 1
             var ss = new Stack("a", "b", "c");
