@@ -34,7 +34,7 @@
                         {
                             root = new TreeNode()
                             {
-                                Employee = employee,
+                                Employee = employee!,
                                 Salary = salary
                             };
                         }
@@ -42,7 +42,7 @@
                         {
                             AddNode(root, new TreeNode()
                             {
-                                Employee = employee,
+                                Employee = employee!,
                                 Salary = salary
                             });
                         }
@@ -154,7 +154,7 @@
             }
         }
 
-        public static (TreeNode?, int) FindEmployeeNode(TreeNode root, int salary, int operationsCount)
+        private static (TreeNode?, int) FindEmployeeNode(TreeNode root, int salary, int operationsCount)
         {
             if (salary < root.Salary)
             {
