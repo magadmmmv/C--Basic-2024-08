@@ -124,6 +124,7 @@ ehthumbs.db
 
 # Folder config file
 Desktop.ini
+[Pp]roperties/
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
